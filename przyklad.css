@@ -1,0 +1,76 @@
+#nag{
+    background-color: chocolate;
+    height: 75px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: darkblue;
+    font-size: 25px;
+}
+.linki{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+#dwa{
+    background-color: dodgerblue;
+    width: 49.8%;
+    height: 220px;
+    margin: 1px;
+    float: left;
+}
+#linia{
+    height: 4px;
+    background-color: darkblue;
+}
+#trzy{
+    background-color: darkorange;
+    width: 33.2%;
+    min-height: 200px;
+    margin: 1px;
+    float: left;
+}
+#cztery{
+    background-color: royalblue;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#piąty{
+    background-color: tomato;
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#tabela{
+    border: 1px solid black; 
+    border-collapse: collapse;
+    height: auto; 
+    width: auto;
+}
+#szósty{
+    background-color: chocolate;
+    height: 50px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    font-size: 30px;
+}
