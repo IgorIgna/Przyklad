@@ -1,0 +1,14 @@
+CREATE USER 'Agnieszka'@'localhost' IDENTIFIED BY 'haslo4';
+SELECT AVG(rocznik) AS Srednia FROM samochody WHERE marka='opel';
+SELECT samochody.marka, klienci.imie FROM samochody, wypozyczenia, klienci WHERE samochody.id = wypozyczenia.samochody_id and wypozyczenia.klienci_id = klienci.id;
+ALTER TABLE klasa DROP COLUMN cena;
+SELECT kierunek, czas FROM przyloty WHERE status_lotu='';
+SELECT odloty.kierunek, odloty.dzien FROM odloty, samoloty WHERE samoloty.typ='Boening 787' and odloty.samoloty_id=samoloty.id;
+SELECT nr_rejsu, kierunek FROM przyloty WHERE nr_rejsu like '%LX%';
+UPDATE samoloty SET linie='SWISS2' WHERE linie='SWISS';
+SELECT * FROM pogoda WHERE miasta_id=1 ORDER BY data_prognozy ASC;
+SELECT id, data_prognozy FROM pogoda WHERE opady>30;
+SELECT pogoda.data_prognozy, pogoda.temperatura_noc, miasta.nazwa FROM pogoda, miasta WHERE pogoda.temperatura_noc<6 and pogoda.miasta_id=miasta.id;
+ALTER TABLE miasta ADD COLUMN wojewodztwo text;
+SELECT id, nazwa, opis, cena FROM podzespoly WHERE cena<1000;
+SELECT podzespoly.nazwa, podzespoly.opis FROM podzespoly, producenci WHERE podzespoly.dostepnosc=1 and producenci.nazwa='Intel' and podzespoly.producenci_id=producenci.id;
